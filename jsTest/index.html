@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <select id="mySelect" onchange="myFunction()">
+    <option value="赤">あか</option>
+    <option value="緑">みどり</option>
+    <option value="青">あお</option>
+    <option value="黄">き</option>
+  </select>
+  <p id="demo"></p>
+
+  <script>
+    function myFunction(){
+      const e = document.getElementById("mySelect").value;
+      document.getElementById("demo").innnerHTML = "your color is " + e;
+    }
+  </script>
+</body>
+</html>
