@@ -12,12 +12,24 @@
     <option value="青">あお</option>
     <option value="黄">き</option>
   </select>
-  <p id="demo"></p>
+  <p id="demo">your color is あか</p>
+
+  <input placeholder="test" />
+  <p id="test"></p>
 
   <script>
     function myFunction(){
       const e = document.getElementById("mySelect").value;
       document.getElementById("demo").innerHTML = "your color is " + e;
+    }
+
+    const input = document.querySelector("input");
+    const history = document.getElementById("test");
+
+    input.addEventListener("change", hoge);
+
+    function hoge(e) {
+     history.textContent = e.target.value;
     }
   </script>
 </body>
