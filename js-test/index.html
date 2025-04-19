@@ -6,6 +6,7 @@
   <title>Document</title>
 </head>
 <body>
+  <h1>テスト</h1>
   <select id="mySelect" onchange="myFunction()">
     <option value="赤">あか</option>
     <option value="緑">みどり</option>
@@ -30,7 +31,16 @@
 
     function hoge(e) {
      history.textContent = e.target.value;
+     console.log(e);
+     console.log(e.target);
     }
   </script>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script>
+    $("h1").css("color", "red");
+  </script>
+   <script type="module" src="function.js"></script>
+   <script type="module" src="user.js"></script>
 </body>
 </html>
